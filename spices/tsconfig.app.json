@@ -7,8 +7,7 @@
     "types": [],
     "esModuleInterop": true,
     "module": "esnext",
-    "sourceMap": true,
-     "target": "es5" // Adjust target if necessar
+    "sourceMap": true
   },
   "files": [
     "src/main.ts"
