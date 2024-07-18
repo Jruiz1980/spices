@@ -20,6 +20,7 @@
     "@angular/router": "^18.1.0",
     "bootstrap": "^5.3.3",
     "mongoose": "^8.5.1",
+    "ngx-header": "^0.0.1",
     "nodemon": "^3.1.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
