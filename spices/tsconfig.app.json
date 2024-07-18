@@ -4,12 +4,22 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "esModuleInterop": true,
+    "module": "esnext",
+    "sourceMap": true,
+     "target": "es5" // Adjust target if necessar
   },
   "files": [
     "src/main.ts"
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+  "rawLoader": {
+    "enabled": true,
+    "test": {
+        "include": ["./src/assets/favicon.ico"]
+    }
+}
 }
