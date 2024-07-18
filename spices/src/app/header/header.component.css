@@ -1,10 +1,14 @@
-nav {
+/*nav {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-.logo {
-    width:5rem;
-    height:auto;
+    background-color: darkkhaki;
+}*/
+nav .logo {
+    width: 2.5rem;
+    height: auto;
+    /*border-radius: 50%;*/
+    border: 0.5rem;
+    border-color: black;
 } 

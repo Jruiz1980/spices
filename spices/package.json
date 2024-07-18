@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "dev":"nodemon --exec ng serve",
+    "dev":"nodemon --exec ng serve --o",
     "test": "ng test"
   },
   "private": true,
