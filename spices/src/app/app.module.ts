@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CreateProductComponent } from './components/create-product/create-product.component';
 import { ListProductComponent} from './components/list-product/list-product.component'
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +15,9 @@ import { ListProductComponent} from './components/list-product/list-product.comp
     HeaderComponent,
     BrowserModule,
     CreateProductComponent,
-    ListProductComponent
+    ListProductComponent,
   ],
-  providers: [],
+  providers: [AppRoutingModule],
   bootstrap: []
 })
 export class AppModule { }
