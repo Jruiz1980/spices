@@ -10,7 +10,7 @@ export const routes: Routes = [
     { path: '**', redirectTo:'', pathMatch: 'full'}
 ];
 
-NgModule({
+@NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
