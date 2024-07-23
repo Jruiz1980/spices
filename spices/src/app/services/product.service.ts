@@ -6,11 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  url = 'http:localhost:4000/api/products'
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<any> {
-    return this.http.get(this.url);
+  getProducts(url: string): Observable<any> {
+    return this.http.get(url);
+  }
+
+  deleteProduct(id: string): Observable<any> {
+    const url = `http://localhost:4000/api/products/${id}`;
+    return this.http.delete(url + id);
   }
 }
