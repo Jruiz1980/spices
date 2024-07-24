@@ -90,22 +90,3 @@ exports.deleteProduct = async (req, res) => {
         res.status(500).send('Server Error');
     }
 };
-/*exports.deleteProduct = async (req, res) => {
-    try {
-        const productId = req.params.id; // Obtener el ID del producto desde la solicitud
-        if (!mongoose.Types.ObjectId.isValid(productId)) {
-            return res.status(400).json({ message: 'Invalid product ID' });
-        }
-
-        const product = await Product.findById(productId);
-        if (!product) {
-            return res.status(404).json({ msg: 'Product not found' });
-        }
-
-        await Product.findByIdAndDelete(productId);
-        res.json({ msg: 'Product deleted successfully' });
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Server Error');
-    }
-};*/

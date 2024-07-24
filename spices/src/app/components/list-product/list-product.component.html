@@ -16,16 +16,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let product of listProducts">
-                            <td>{{product.name}}</td>
-                            <td>{{product.category}}</td>
-                            <td>{{product.ubication}}</td>
-                            <td>{{product.price | currency: '$'}}</td>
-                            <td><i class="fa-solid fa-pen-to-square text-primary"></i>
-                                <i (click)="deleteProduct(product._id)" class="fa-solid fa-trash text-danger"></i></td>
-                          </tr>
+                            <tr *ngFor="let product of listProducts">
+                                <td>{{product.name}}</td>
+                                <td>{{product.category}}</td>
+                                <td>{{product.ubication}}</td>
+                                <td>{{product.price | currency: '$'}}</td>
+                                <td><i [routerLink]="['/edit-product', product._id]" class="fa-solid fa-pen-to-square text-primary"></i>
+                                    <i (click)="deleteProduct(product._id)" class="fa-solid fa-trash text-danger"></i></td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                       <h5 style="text-align: start; margin-top:10px" *ngIf="listProducts.length == 0">No products found</h5>
                 </div>
             </div>
