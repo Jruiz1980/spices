@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  url = 'https://spices-ww9j.onrender.com';
+  url = 'https://localhost:4000/api/products';
 
   constructor(private http: HttpClient) { }
 

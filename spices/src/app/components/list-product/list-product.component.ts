@@ -18,7 +18,7 @@ export class ListProductComponent implements OnInit {
               private router: Router) {}
 
   ngOnInit(): void {
-    const apiUrl = 'https://spices-ww9j.onrender.com';
+    const apiUrl = 'https://localhost:4000/api/products';
     this.getProducts(apiUrl);
   }
 
@@ -36,7 +36,7 @@ export class ListProductComponent implements OnInit {
   deleteProduct(id: any) {
     this._productService.deleteProduct(id).subscribe(data => {
       this.toastr.success('Removed product succesfully', 'Product Removed');
-      this.getProducts('https://spices-ww9j.onrender.com');
+      this.getProducts('https://localhost:4000/api/products');
       console.log(data)
     }, error => {
       console.log(error);
@@ -46,7 +46,7 @@ export class ListProductComponent implements OnInit {
 updateProduct(id: any, updateProduct: any) {
   this._productService.updateProduct(id, updateProduct).subscribe(data => {
     /*this.toastr.success('Updated product successfully', 'Product Updated');*/
-    this.getProducts('https://spices-ww9j.onrender.com');
+    this.getProducts('https://localhost:4000/api/products');
   }, error => {
     console.log(error);
   });
