@@ -2,3 +2,11 @@
     cursor:pointer;
     margin-left: 0.5rem;
 }
+
+.table table-striped mt-4 tbody tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.table table-striped mt-4 tbody tr:nth-child(even) {
+    background-color: lightgreen;
+}
