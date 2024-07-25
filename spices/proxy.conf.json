@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://spices-ww9j.onrender.com",
+    "target": "http://localhost:4000",
     "secure": false,
     "changeOrigin": true,
     "pathRewrite": { "^/api": "" }

@@ -1,9 +1,0 @@
-settings:
-  global-bin-dir: /usr/local/bin
-
-services:
-  - type: web
-    name: spices
-    runtime: nodejs
-    buildCommand: pnpm install -g @angular/cli && pnpm install && pnpm run build --configuration production --aot
-    startCommand: pnpm tun start
