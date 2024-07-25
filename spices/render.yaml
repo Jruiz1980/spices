@@ -2,5 +2,5 @@ services:
   - type: web
     name: spices
     runtime: nodejs
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    buildCommand: ng build
+    startCommand: ng serve --o
